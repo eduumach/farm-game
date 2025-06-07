@@ -1,0 +1,52 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://c8fao7fcwjy1q"]
+
+[ext_resource type="Texture2D" uid="uid://br47jvk02nbq7" path="res://assets/UI/UI Elements Tileset.png" id="1_53fdp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_53fdp"]
+texture = ExtResource("1_53fdp")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(11, 155, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uilko"]
+texture = ExtResource("1_53fdp")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(11, 11, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_860fx"]
+texture = ExtResource("1_53fdp")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(11, 107, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_02rxe"]
+texture = ExtResource("1_53fdp")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(11, 155, 26, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p8ads"]
+texture = ExtResource("1_53fdp")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 7.0
+texture_margin_bottom = 7.0
+region_rect = Rect2(201, 105, 30, 30)
+
+[resource]
+ButtonTool/base_type = &"Button"
+ButtonTool/styles/focus = SubResource("StyleBoxTexture_53fdp")
+ButtonTool/styles/hover = SubResource("StyleBoxTexture_uilko")
+ButtonTool/styles/normal = SubResource("StyleBoxTexture_860fx")
+ButtonTool/styles/pressed = SubResource("StyleBoxTexture_02rxe")
+PanelWood/base_type = &"PanelContainer"
+PanelWood/styles/panel = SubResource("StyleBoxTexture_p8ads")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://dnlym5d1n75bb"]
+[gd_scene load_steps=5 format=4 uid="uid://dnlym5d1n75bb"]
 
 [ext_resource type="Script" uid="uid://bskih8kcsvvgp" path="res://scenes/farm/farm.gd" id="1_fev0l"]
 [ext_resource type="TileSet" uid="uid://c0iuja5c56wbx" path="res://resources/tile_set_farm.tres" id="1_wgrn4"]
 [ext_resource type="PackedScene" uid="uid://bw04ttfswavwm" path="res://scenes/player/player.tscn" id="2_fev0l"]
+[ext_resource type="PackedScene" uid="uid://bwp37a7mfbt0x" path="res://scenes/ui/ui_tools.tscn" id="4_xp5e4"]
 
 [node name="Farm" type="Node2D"]
 y_sort_enabled = true
@@ -40,3 +41,7 @@ tile_set = ExtResource("1_wgrn4")
 [node name="Player" parent="." instance=ExtResource("2_fev0l")]
 y_sort_enabled = true
 position = Vector2(84, 97)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UITools" parent="CanvasLayer" instance=ExtResource("4_xp5e4")]
